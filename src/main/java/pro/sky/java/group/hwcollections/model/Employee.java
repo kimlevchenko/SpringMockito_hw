@@ -1,7 +1,5 @@
 package pro.sky.java.group.hwcollections.model;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.Objects;
 
 import static org.apache.commons.lang3.StringUtils.*;
@@ -13,10 +11,9 @@ public class Employee {
     private double salary;
     private int department;
 
-
-    public Employee(String fistName, String lastName, Double salary, int department) {
-        this.fistName = capitalize(fistName.toLowerCase());
-        this.lastName = capitalize(lastName.toLowerCase());
+    public Employee(String fistName, String lastName, double salary, int department) {
+        this.fistName = fistName;
+        this.lastName = lastName;
         this.salary = salary;
         this.department = department;
     }
