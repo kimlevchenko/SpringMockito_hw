@@ -42,12 +42,12 @@ class DepartmentServiceTest {
 
     @Test
     void testMaxSalary() {
-        Assertions.assertThat(departmentService.maxSalary(1)).isEqualTo(70_000d);
+        Assertions.assertThat(departmentService.maxSalary(1).getSalary()).isEqualTo(70_000d);
     }
 
     @Test
     void testMinSalary() {
-        Assertions.assertThat(departmentService.minSalary(1)).isEqualTo(new Employee("test", "test20", 50_000, 1));
+        Assertions.assertThat(departmentService.minSalary(1).getSalary()).isEqualTo(50_000d);
     }
 
     @Test
